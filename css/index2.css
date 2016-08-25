@@ -1,0 +1,131 @@
+
+.txtnav{
+    background-color:#e8e8e8;
+}
+.txtnav .w{
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+.txtnav span{
+    margin:29px  20px 0 0;
+    width: 102px;
+    height: 42px;
+    line-height: 42px;
+    background: url(../images/newLogos.png) no-repeat;
+    float:left;
+}
+.txtnav h1{
+    float:left;
+}
+/*main 开始*/
+
+.txtmain{  
+    background-color:#e8e8e8;
+}
+.txtmain .w{
+    height: 800px;
+    background-color: white;
+    display:flex;
+}
+.txtmain-left{
+    margin:100px 0px 0px 120px;
+    flex:6;
+}
+.txtmain-left h2{
+    font:18px "microsoft yahei";
+    padding-top:50px;
+}
+.txtmain-left .account{
+    margin-bottom: 20px;
+}
+.txtmain-left  input{
+    font-size:16px;
+    padding-left:20px;
+    width: 278px;
+    height: 35px;
+    border: 1px solid gray;
+}
+.txtmain-left .account{
+    margin-bottom: 20px;
+}
+
+.txtmain-left .logincode{
+    margin-bottom: 20px;
+}
+.txtmain-left .texcheckbox input{
+    width: 15px;
+}
+.txtmain-left .txtsubmit{
+    width: 60px;
+    padding:0px 102px 0px 41px;
+    background-color: red;
+    cursor:pointer;
+    color:white;
+    font-size: 18px;
+    font-weight:600;
+    border:none;
+}
+/* 右边 部分*/
+.txtmain-right{
+    margin-top:78px;
+    width: 400px;
+    height: 100%;
+    flex:4;
+    height:279px;
+    border-left:1px dashed lightgray;
+}
+.txtmain-right h2{
+    text-align: center;
+    font-size:22px;
+}
+.txtmain-right div:nth-child(1) input{
+    background-color: red;
+    text-align: center;
+    margin:20px 0 20px 38%;
+    font-size:20px;
+    padding:10px;
+    cursor:pointer;
+}
+.txtmain-right div:nth-child(2){
+    height: 200px;
+}
+.txtmain-right div:nth-child(2) div{
+    margin:20px 0px 0px 132px;
+}
+.txtmain-right div:nth-child(2) a{
+    display: inline-block;
+    width: 91px;
+    height:87px;
+}
+.txtmain-right div:nth-child(2) .otherlogin1{
+    background:url(../images/form_login.png) no-repeat 0px -402px;
+}
+.txtmain-right div:nth-child(2) .otherlogin2{
+    background:url(../images/form_login.png) no-repeat -90px -404px;
+}
+.txtmain-right div:nth-child(2) .otherlogin3{
+    background:url(../images/form_login.png) no-repeat -184px -404px;
+}
+.txtmain-right div:nth-child(2) .otherlogin4{
+    background:url(../images/form_login.png) no-repeat -275px -404px;
+}
+/* footer  开始 */
+.txtfooter{
+    height: 100px;
+    background-color:#e8e8e8;
+}
+.txtfooter w{
+    height: 100px;
+    background-color:lightgray;
+}
+.txtfooter p{
+    font-size: 16px;
+    line-height:100px;
+    text-align:center;
+}
+.submit{
+    width: 30px;
+}
+
+

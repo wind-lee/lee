@@ -1,0 +1,198 @@
+.main-right{
+    width: 270px;
+    height: 633px;
+    /* background-color: yellow; */
+    /* margin: 10px auto; */
+}
+/* 右边上面开始 */
+.m-r-top{
+ width: 270px;
+ height: 328px;
+}
+/*
+.Carousel ul li{
+ width: 270px;
+ height: 328px;
+  border: 1px solid black;
+  float: left;
+} */
+/* 左边上面结束 */
+
+
+
+/* 右边下面开始 */
+.m-r-bottom{
+ width: 270px;
+ height: 305px;
+}
+.Ranking{
+ /* width: 100%; */
+ height: 41px;
+ display: flex;
+ border-bottom: 1px solid gray;
+
+}
+.Ranking h2{
+ flex: 6;
+ font: 700 20px/41px "";
+}
+/* 电影展示栏的头部 */
+.Ranking-menu{
+ flex: 4;
+ display: flex;
+}
+.Ranking-menu p{
+  text-align: center;
+  font: 600 16px/41px "";
+  border: 1px solid gray;
+}
+.Ranking-menu  .well-slice{
+  flex: 1;
+}
+.Ranking-menu  .well-slice:hover{
+ border-bottom: 4px solid #FF6600;
+}
+.Ranking-menu .new-slice{
+ flex: 1;
+}
+.Ranking-menu .new-slice:hover{
+ cursor: pointer;
+ /* color: white; */
+ /* background-color:#FF6600; */
+ border-bottom: 4px solid #FF6600;
+}
+
+/* 电影菜单 */
+.Movie-menu{
+ width: 100%;
+ height: 100%;
+ /* border: 1px solid red; */
+}
+.Movie-menu div{
+    /* height:35px; */
+    border-bottom:1px solid gray ;
+    /* display: flex; */
+}
+/* 264px   有五个li,四个25px,一个展开的164px */
+/* 鼠标划过展开 */
+.Movie-menu .menu-child{
+ height: 124px;
+ width: 100%;
+ display: flex;
+}
+
+
+/* 没展开的菜单栏 */
+.menu-block{
+ display: flex;
+}
+.menu-block span{
+ padding-top: 5px;
+}
+.menu-block span:nth-child(1){
+ flex: 1;
+ font: bold 20px "";
+}
+.menu-block span:nth-child(1) em{
+  display: inline-block;
+  width: 100%;
+ height:100%;
+ text-align: center;
+ background-color:#FF6600;
+}
+.menu-block span:nth-child(2){
+ flex: 8;
+ padding: 8px 0  0   10px;
+ font: 600 14px "";
+}
+.menu-block span:nth-child(3){
+ flex: 1;
+ text-align: center;
+ font: bold 18px "";
+ color: #FF6600;
+}
+
+
+
+
+.menu-child span{
+ display:block;
+ float: left;
+ padding-top: 10px;
+}
+.menu-child span:nth-child(1){
+ width: 26px;
+ font: bold 20px "";
+}
+.menu-child span:nth-child(1) em{
+  display: inline-block;
+  width: 100%;
+ height:22%;
+ text-align: center;
+ background-color:#FF6600;
+}
+
+.menu-child span:nth-child(2){
+ width: 75px;
+}
+.menu-child span:nth-child(2) img{
+}
+
+.menu-child span:nth-child(3){
+ width: 124px;
+ background-color:white;
+ padding:10px 7px;
+}
+.menu-child span:nth-child(3) a{
+ font: bold 18px "";
+ color: black;
+}
+.menu-child span:nth-child(3) a:hover{
+ color:#FF6600 ;
+}
+.menu-child span:nth-child(3) p{
+  font: 400 12px "";
+  padding-top: 10px;
+}
+.menu-child span:nth-child(3) p em{
+ font: bold 16px "";
+}
+.menu-child span:nth-child(4){
+ width: 31px;
+ font: bold 18px "";
+ color:#FF6600 ;
+ text-align: center;
+}
+
+
+
+/* 隐藏掉 */
+.m-m-menu-child  .menu-child{
+    display: none;
+}
+
+
+.active{
+ display: block;
+ height: 134px;
+}
+/* .menu-child .active{
+   height: 124px;
+   display: block;
+   background-color:red;
+} */
+.conceal{
+ /* display: none; */
+}
+
+
+
+.m-m-menu-child{
+ /* transition: all 1s; */
+}
+.m-m-menu-child:hover .menu-block{
+  background-color:white;
+  text-align: center;
+}
+
+

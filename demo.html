@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+		.movie{
+			width: 690px;
+		}
+		.movie>.movie_title{
+			height: 32px;
+			line-height: 32px;
+		}
+		.movie>.movie_title>h4{
+			float: left;
+		}
+		.movie>.movie_title>a{
+			float: right;
+			font-size: 14px;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<button id="btn">sendAjax</button>
+	<div id="demo">
+		<div class="movie">
+			<div class="movie_title">
+				<h4>热门活动</h4>
+				<a href="#">换一批</a>
+			</div>
+			<div class="movie_box">
+				<ul>
+					<li class="item">
+						<div class="item-left">
+							<a href="#"><img src="movieImg/movie1.jpg"></a>
+						</div>
+						<div class="item-right">
+							<a href="">2016国家大剧院国际歌剧电影展—声如钟，美如画</a>
+							<p><span></span><span>￥23</span></p>
+							<p><span>898人关注 5人参加</span></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="js/template-native.js"></script>
+</body>
+</html>

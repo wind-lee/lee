@@ -1,0 +1,34 @@
+.Carousel{
+ width: 270px;
+ height:328px;
+ background-color:pink;
+ overflow: hidden;
+ position: relative;
+}
+.slider{
+ position: absolute;
+ right: 6px;
+ bottom: 6px;
+}
+.Carousel ul{
+  width: 1000%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.Carousel li{
+  float: left;
+}
+.slider span{
+ display: inline-block;
+ width: 16px;
+ height: 18px;
+ background-color:#fff;
+ text-align: center;
+ line-height: 18px;
+ cursor: pointer;
+}
+.slider span.current{
+  background-color: orangered;
+  color: #fff;
+}

@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;				/*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;			/*合并外边线*/
+}
+
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";	/*宋体，Unicode，统一码*/
+    color: #666;
+    background: #fff
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+ h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+/*site-nav部分start*/
+.gewaraNav{
+    height: 51px;
+    background-color: #EB6120;
+}
+
+.gewaraNav ul:nth-child(1) {
+    width: 626px;
+    height: 51px;    /*为什么 height: 100%;是无效的*/
+
+}
+.gewaraNav ul:nth-child(1) li{
+    float:left;
+    height: 100%;
+}
+
+.gewaraNav .place li  a{
+    font:600 18px/51px normal;
+    color:white;
+    padding:0 10px;
+}
+
+.gewaraNav ul li:nth-child(1){
+    display:block;
+    margin-top:5px;
+    width: 103px;
+    height: 40px;
+    background: url(../images/logos_white.png) 0px -41px;
+}
+.gewaraNav .place li:nth-child(2){
+    position:relative;
+    margin-right:20px;
+
+}
+.gewaraNav .place li:nth-child(2) a{
+    font:600 14px/51px '微软雅黑';
+}
+
+.gewaraNav .place li:nth-child(2) a i{
+    position:absolute;
+    top:22px;
+    right:-3px;
+    width: 9px;
+    height: 9px;
+    background: url(../images/ico_arrow.gif) 0px 0px;
+}
+.gewaraNav ul:nth-child(2){
+    float:left;
+}
+.gewaraNav ul:nth-child(2) li{
+
+    float:left;
+    height: 100%;
+}
+/* 右侧部分*/
+.gewaraNav .right{
+    /*text-align:center;*/
+    line-height: 51px;
+}
+.gewaraNav .right .search{
+    margin-top:12px;
+    width: 230px;
+    height: 28px;
+    margin-right:60px;
+
+}
+.gewaraNav .right .search-text{
+    padding-left:5px;
+    float:left;
+    width: 197px;
+    height: 28px;
+    border-radius: 5px 0px 0px 5px;
+}
+.gewaraNav .right .search-btn{
+    background-color: green;
+    float:left;
+    height: 28px;
+    border-radius:0px 5px 5px 0px;
+    width: 28px;
+    text-align: center;
+    background:url(../images/ico_glass.gif) no-repeat 5px 6px;
+    background-color: white;
+
+}
+.gewaraNav .search-btn:hover{
+    background:url(../images/ico_glass.gif) no-repeat ;
+    background-position: 5px -30px;
+    cursor:pointer;
+    background-color: #e8e8e8;
+}
+.gewaraNav .nav-login a{
+    color:white;
+    font-size:14px;
+    font-family: "微软雅黑";
+}
+
+.gewaraNav .nav-redbag a{
+    margin-left:100px;
+    font-size:14px;
+    font-family: "微软雅黑";
+    color:white;
+}
+/*nav end*/
+
+
+
+
+
+
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index2.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <style></style>
+</head>
+<body>
+<div class="txtnav">
+    <div class="w">
+        <span></span>
+        <h1>欢迎注册</h1>
+    </div>
+</div>
+<div class="txtmain">
+    <div class="w">
+
+        <div class="txtmain-left" >
+            <form action="" method="">
+                <input type="text" id="user" placeholder="请输入用户名" class="account" name="user" /><br/>
+                <input type="password" id="pwd1" placeholder="登录密码" class="logincode" name="pwd" /><br/>
+                <input type="text" id="pwd2" placeholder="确认登录密码" class="ensurecode" /><br/>
+                <div class="texcheckbox">
+                    <input type="checkbox" name="texcheckbox"/><i>我接受服务协议表明您已经阅读并同意接受格瓦拉的服务协议</i>
+                </div>
+                <input type="submit" value="注 &nbsp册" class="txtsubmit" id="zhuce" />
+            </form>
+        </div>
+
+
+
+        <div class="txtmain-right">
+            <div>
+                <h2>已经有格瓦拉账号？</h2>
+                <input type="button" value="立即登录"/>
+            </div>
+            <div class="otherlogin">
+                <h2>其他账号登录</h2>
+                <div>
+                    <a href="javascript:;" class="otherlogin1"></a>
+                    <a href="javascript:;" class="otherlogin2"></a><br/>
+                    <a href="javascript:;" class="otherlogin3"></a>
+                    <a href="javascript:;" class="otherlogin4"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 底部 开始-->
+<div class="txtfooter">
+    <div class="w">
+        <p> Copyright 2007-2014 Gewara. &nbsp All Rights Reserved  &nbsp 沪IC备09050772号  &nbsp ICP证沪B2-20120044
+            &nbsp<strong> 手机版</strong> iphone Android   &nbsp<strong>客服电话</strong> 1010-1068
+        </p>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var stratige = {
+                isEmail:function(value) {
+                    var pattern = /^[\w!#$%&'*+\/=?^_`{|}~-]+(?:\.[\w!#$%&'*+\/=?^_`{|}~-]+)*@(?:[\w](?:[\w-]*[\w])?\.)+[\w](?:[\w-]*[\w])?$/;
+                    return pattern.test(value);
+                },
+                isMobileNo:function(value) {
+                    var pattern = /^(13\d|14[57]|15[^4,\D]|17[678]|18\d)\d{8}|170[059]\d{7}$/;
+                    return pattern.test(value);
+                },
+                isCurrentpwd:function(value) {
+                    var pattern = /^[a-zA-Z0-9]{6,18}$/;
+                    return pattern.test(value);
+                }
+            };
+        $("#zhuce").on("click",function() {
+            var currentUser = stratige.isEmail($("#user").val()) || stratige.isMobileNo($("#user").val());
+            var iseq = $("#pwd1").val() == $("#pwd2").val();
+            if ( currentUser && stratige.isCurrentpwd($("#pwd1").val()) && iseq) {
+                    $.ajax({
+                        url:"test.php",
+                        type:"post",
+                        success:function(data) {
+                            var callbackData = $.parseJSON(data);
+                            var flag = true;
+                            for (var i = 0; i < callbackData.length; i++) {
+                                if(callbackData[i]["user"] == $("#user").val()) {
+                                    flag = false;
+                                    alert("该用户已被注册");
+                                };
+                            };
+                            if(flag) {
+                                $.ajax({
+                                        url:"zhuce.php",
+                                        type:"post",
+                                        data:{
+                                            user:$("#user").val(),
+                                            pwd:$("#pwd1").val()    
+                                        },
+                                        success:function() {
+                                            alert("注册成功");
+                                        }
+                                    });
+                            }
+                            
+                        }
+                    });
+
+                }else {
+                    alert('请输入正确的用户名和密码');    
+                }
+        })
+    });
+</script>
+</body>
+</html>
+<script>
+
+
+
+</script>
